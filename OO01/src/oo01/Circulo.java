@@ -1,51 +1,44 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package oo01;
 
-/**
- *
- * @author Diego
- */
-public class Circulo {   
-
-    public float getPi() {
-        return pi;
-    }
-
-    public String getLetra() {
-        return letra;
-    }
-
-    public boolean isRecto() {
-        return recto;
-    }
-
-    public int[] getRadios() {
-        return radios;
-    }
-    private int cantLados;
-    float pi;
-    String letra;
-    boolean recto;
-    int radios[]; //extiendo Circulo a Ovalo
+public class Circulo {    
+   
+    private int lados;
+    private float pi;
+    private String letra;
+    private boolean recto;
+    private int radios[]; 
     
-    //metodo constructor
     public Circulo(){
-    cantLados = 0;
+    lados = 0;
     pi = 3.14f;
-    recto = false;
     letra = "e";
-    radios = new int[2]; //tamaño del arreglo es 3 elementos
+    recto = false;
+    radios = new int[2]; 
     radios[0] =5;
     radios[1] = 5;
     }
     
-    public int getCantLados()
-    {
-        return cantLados;
+    public int getlados(){
+        return lados;
     }
-
+    
+      public float getpi(){
+        return pi;
+    }
+      
+      public String getletra(){
+        return letra;
+    }
+      
+      public boolean getrecto(){
+        return recto;
+    }  
+    
+        public int getradios(){
+        return radios[2];
+    }
+        
+        
 }
+
+
