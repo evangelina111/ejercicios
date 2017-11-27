@@ -1,35 +1,66 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package oo01;
 
 import java.awt.Color;
 
-
-
-
-/**
- *
- * @author cecla
- */
 public class Cuadrado {
     int cantLados;
     Color color;
-    String letra;
-    boolean recto;
+    char letra;
+    boolean rectilineo;
     int tamaño[];   
 
     public Cuadrado(){
     cantLados = 4;
     color = Color.blue;
-    letra = "e";
-    recto = false;
-    tamaño = new int[4]; //tamaño del arreglo es 3 elementos
+    letra = 'e';
+    rectilineo = false;
+    tamaño = new int[4]; 
     tamaño[0] = 10;
     tamaño[1] = 10;
     tamaño[2] = 10;
     tamaño[3] = 10;
     }
-}
+        
+    public void setcantLados(int cantLados){
+       this.cantLados =cantLados;
+    }
+    
+    public int getcantLados(){
+        return cantLados;
+    }
+    
+    public void setpi(float pi){
+       //this.pi = pi;
+    }
+         
+    public float getpi(){
+        return 0;
+        //return pi;
+    }
+    
+    public void setletra(char letra){
+       this.letra = letra;
+    }
+    
+    public char getletra(){
+        return letra;
+    }
+      
+    public void setrectilineo(boolean rectilineo){
+       this.rectilineo = rectilineo;
+    }
+    
+    public boolean getrectilineo(){
+        return rectilineo;
+    }  
+    
+    public void setradios(int[] radios){
+       //this.radios = radios;
+    }
+    
+    public int getradios(){
+        return 0;
+        //return radios[2];
+    } 
+    }
+
